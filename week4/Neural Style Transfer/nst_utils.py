@@ -172,7 +172,7 @@ def reshape_and_normalize_image(image):
     # Reshape image to mach expected input of VGG16
     image = np.reshape(image, ((1,) + image.shape))
     
-    # Substract the mean to match the expected input of VGG16
+    # Subtract the mean to match the expected input of VGG16
     image = image - CONFIG.MEANS
     
     return image
